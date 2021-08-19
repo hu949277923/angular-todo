@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+.main {
+  width: 400px;
+  height: auto;
+  margin: auto;
+}
+
+.list-title {
+  height: 50px;
+  line-height: 50px;
+  font-weight: 300;
+  text-align: center;
+  background-color: darkgrey;
+  margin-bottom: unset;
+}
+
+.list-add {
+  display: flex;
+  height: 60px;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(169 169 169 / 29%);
+  .form-control {
+    width: 250px;
+  }
+}
+
+.btn {
+  width: 70px;
+}
+
+.container {
+  width: 400px;
+}
+
+.list-group {
+  margin: 10px auto;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+}

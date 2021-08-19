@@ -1,0 +1,24 @@
+<!-- 作业 实现 todolist 效果 -->
+<!-- <button (click)="increment()">+1</button>
+<button (click)="async_increment()">延时相加</button>
+<span>{{count | async}}</span>
+<button (click)="decrement()">-1</button>
+<router-outlet></router-outlet> -->
+<div class="main" @todoAnimations>
+  <h2 class="list-title">Angular TodoList</h2>
+  <div class="list-add">
+    <input #AddTodoInput type="text" class="form-control" placeholder="add todo" />
+    <button (click)="addTodo()" class="btn btn-danger btn-add">添加</button>
+  </div>
+  <div class="container mt-4">
+    <ul class="list-group">
+      <li 
+        @slide
+        *ngFor="let todo of todos | async"
+        class="list-group-item d-flex align-items-center justify-content-between">
+        {{ todo.title }}
+        <button (click)="deleteTodo(todo.id)" type="button" class="btn btn-danger btn-sm">删除</button>
+      </li>
+    </ul>
+  </div>
+</div>
